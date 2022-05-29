@@ -8,4 +8,4 @@
 
 ![Mobile](https://raw.githubusercontent.com/adtjha/ui/master/mobile.jpg)
 
-# Code inside index.html deployed [here](https://google.com).
+# Code inside index.html deployed [here](https://storied-frangipane-49f453.netlify.app/).
