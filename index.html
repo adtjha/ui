@@ -28,6 +28,7 @@
       #peerComparison {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        margin-top: -4rem;
       }
 
       #retirementStrategy {
@@ -86,18 +87,23 @@
         #peerComparison {
           grid-column: auto;
           grid-row: auto;
+          margin-top: 0;
         }
 
         #retirementStrategy {
           grid-column: auto;
           grid-row: auto;
         }
+
+        #retirementStats {
+          margin-top: 0;
+        }
       }
     </style>
   </head>
   <body class="relative">
     <nav
-      class="fixed bottom-0 lg:top-0 inset-x-0 lg:inset-x-[auto] w-full lg:w-fit lg:h-full bg-white py-4 lg:py-4 lg:px-3 z-10 flex lg:flex-col lg:items-center lg:justify-center"
+      class="fixed bottom-0 lg:top-0 inset-x-0 lg:inset-x-[auto] w-full lg:w-fit lg:h-full bg-white py-4 lg:py-4 lg:px-3 z-20 flex lg:flex-col lg:items-center lg:justify-center"
     >
       <ul
         class="hidden lg:block mb-12 flex flex-col items-start justify-center space-y-2"
@@ -271,7 +277,7 @@
 
       <div
         id="userProfile"
-        class="w-full lg:bg-indigo-50 flex flex-col items-stretch justify-start space-y-8 py-8 lg:px-8 mb-12 lg:mb-0 snap-start shrink-0"
+        class="w-full lg:bg-[rgba(238,242,255,0.4)] flex flex-col items-stretch justify-start space-y-8 py-8 lg:px-8 mb-12 lg:mb-0 snap-start shrink-0"
       >
         <div id="user" class="flex flex-row items-center justify-start gap-4">
           <img
@@ -350,6 +356,7 @@
           <h1 class="text-2xl lg:text-xl font-bold">Starting Year 2056</h1>
         </div>
         <div
+          id="retirementStats"
           class="grid grid-rows-2 lg:grid-rows-1 grid-cols-2 lg:grid-cols-3 items-stretch justify-center gap-x-4 lg:gap-4"
         >
           <div
@@ -373,7 +380,7 @@
             </h5>
           </div>
         </div>
-        <div class="w-full flex flex-col items-start justify-center gap-3">
+        <div class="w-full flex flex-col items-start justify-center gap-4">
           <h2 class="font-bold text-xl lg:text-lg">Contributions Overtime</h2>
           <div class="w-full flex flex-row items-center justify-between">
             <div
@@ -407,7 +414,7 @@
 
       <div
         id="peerComparison"
-        class="w-full flex flex-col items-stretch justify-start space-y-8 py-8 pb-0 lg:pt-0 lg:mb-0 snap-start shrink-0"
+        class="w-full flex flex-col items-stretch justify-start space-y-8 py-8 pb-0 lg:pt-0 lg:mb-12 snap-start shrink-0"
       >
         <div class="flex flex-col items-start justify-center gap-1 lg:gap-2">
           <h1 class="text-xl font-[500]">How do I compare to my peers?</h1>
@@ -481,7 +488,7 @@
         class="w-full py-8 pt-0 lg:pt-8 lg:px-4 mb-0 snap-end shrink-0"
       >
         <div
-          class="flex flex-col items-stretch justify-start gap-4 bg-blue-50 -mx-8 lg:mx-0 py-8 pb-0 lg:p-8 rounded-t-[3rem] lg:rounded-lg"
+          class="flex flex-col items-stretch justify-start gap-4 bg-[rgba(238,242,255,0.4)] -mx-8 lg:mx-0 py-8 pb-0 lg:p-8 rounded-t-[3rem] lg:rounded-lg"
         >
           <h1 class="text-2xl px-8 lg:px-0 lg:text-xl font-[500]">
             Retirement Strategy
